@@ -140,6 +140,7 @@ hr{
 
 .advantages-row{
     display: flex;
+    flex-wrap: wrap;
     column-gap:30px;
 }
 
@@ -149,7 +150,6 @@ hr{
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    Width: 370px;
     Height:383px;
 }
 
@@ -169,8 +169,7 @@ hr{
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    Width: 370px;
-    Height: 105px;
+    width: 370px;
     margin-top: 8px;
 }
 
