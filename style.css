@@ -142,10 +142,6 @@ hr{
 
 /* tabs */
 
-.tabs{
-    border: 1px solid #C6CBCD;
-}
-
 .tabs__header{ 
     display: flex;
     text-align:center;
