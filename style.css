@@ -153,7 +153,6 @@ hr{
     width: 190px;
     height: 40px;
     margin: auto;
-
 }
 
 .tabs__item:active {
@@ -162,7 +161,7 @@ hr{
    border-radius: 5px 5px 0px 0px;
 }
 
-.tabs__item.tabs__item:checked {
+.tabs__item:checked {
     box-sizing: border-box;
     border: 1px solid #C6CBCD;
     border-radius: 5px 5px 0px 0px;
