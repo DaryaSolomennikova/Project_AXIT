@@ -154,13 +154,12 @@ hr{
 .banner{
     background-image: url('./img/image.png');
     width: 100%;
-    height: 1026px;
+    height: 1200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .banner__header{ 
-    display: block;
 	position: relative;
     background-color:rgba(0, 0, 0, .5);
 	width: 100%;
@@ -169,18 +168,44 @@ hr{
 	left: 0;
 }
 
+.logo__banner{
+    width: 170px;
+    height: 55px;
+}
+
+.line{
+    border-top: 1px solid #fff;
+    width: 170px;
+    align-items:left;
+    padding-bottom: 40px;
+}
+
+.banner__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner__content{
+    margin-top: 231px;
+}
+
 .banner__title{
     font-family: Raleway500;
     font-size: 48px;
     line-height: 56px;
+    color:#fff;
     padding-top: 50px;
     padding-bottom: 63px;
-    width: 60%;
-    height: 168px;
+    width: 670px;
 }
 .banner__subtitle {
-    padding-top: 50px;
+    font-family: Raleway400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffff;
     padding-bottom: 63px;
+    height: 42px;
+    width: 270px;
 }
 
 /* .banner__title, .banner__subtitle {
@@ -198,6 +223,58 @@ hr{
     width: 270px;
     height: 58px;
     background-color:rgba(0, 0, 0, 0)  
+}
+
+.banner__form{
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 470px;
+    height: 450px;
+    margin-top: 208px;
+}
+
+.banner__form legend{
+    font-family: OpenSans700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 45px; 
+    padding: 45px;
+    
+}
+
+legend span{
+    color:#EC7979;
+}
+
+.form__content{
+    text-align:center;
+}
+
+.form__content input{
+    font-family: OpenSans400;
+    font-size: 14px;
+    line-height: 19px;
+    width:80%;
+    border:none;
+    border-bottom: 1px solid #BDBDBD;
+    height:38px;
+    margin-bottom: 33px;
+}
+
+.form__content input:last-child{
+    margin-bottom: 75px;
+}
+
+.form__btn{
+    font-family: OpenSans600;
+    font-size: 15px;
+    line-height: 20px;
+    color:#fff;
+    width: 470px;
+    height: 60px;
+    background-color:#EC7979;
+    border-radius: 0px 0px 10px 10px;
 }
 
 /* socialmedia */
@@ -300,15 +377,15 @@ margin-left: 100px;
 .tabs__btn{
     font-family: 'OpenSans600';
     font-size: 18px;
-line-height: 25px;
-color:#fff;
-background-color:#EC7979;
-display: flex;
-align-items:center;
-justify-content: center;
-width: 270px;
-height: 58px;
-margin-top: 27px;
+    line-height: 25px;
+    color:#fff;
+    background-color:#EC7979;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 270px;
+    height: 58px;
+    margin-top: 27px;
 }
 
 /*advantages */
@@ -441,12 +518,36 @@ margin-top: 27px;
 
 /* footer */
 
-/* .footer{
+.footer{
     background: #000;
     width: 100%;
     height: 164px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.social_logo{
+
+.footer__icons{
+    margin-bottom: 28px;
+    margin-top: 35px;
+}
+
+.footer__icons a{
+    width: 53px;
+    height: 53px;
+    margin-right: 38px;
+}
+
+.footer__text{
+    font-family: Raleway400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 28px;
+}
+/* .footer_wrapper{
     max-width: 1170px;
     margin: auto;
 } */
+
