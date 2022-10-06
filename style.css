@@ -73,6 +73,16 @@ img{vertical-align: top;}
 }
 
 @font-face {
+    font-family: OpenSans400;
+    src: url("./fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("./fonts/OpenSans-Regular.woff") format("woff"),
+    url("./fonts/OpenSans-Regular.ttf") format("truetype"),
+    url("./fonts/OpenSans-Regular.eot") format("eot");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: OpenSans600;
     src: url("./fonts/OpenSans-SemiBold.woff2") format("woff2"),
     url("./fonts/OpenSans-SemiBold.woff") format("woff"),
@@ -91,7 +101,12 @@ body{
 .header{
     background: #000;
     width: 100%;
-    
+}
+
+.header__wrapper{
+    width: 80%;
+    margin-right: 170px;
+    margin-left: 115px;
 }
 
 ul{
@@ -105,15 +120,19 @@ ul{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 76px;
-
+    height: 75px;
 }
 
 .nav__menu{
     display: flex;
+    justify-content: space-around;
+    width: 570px;
 }
 
 nav li a{
+    font-family: OpenSans600;
+    font-size: 14px;
+    line-height: 19px;
     text-decoration: none;
     color: #fff;
 }
@@ -154,15 +173,16 @@ hr{
 .banner{
     background-image: url('./img/image.png');
     width: 100%;
-    height: 1200px;
+    height: 90%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
-.banner__header{ 
+
+.banner__blackout{ 
+    display: flex;
 	position: relative;
     background-color:rgba(0, 0, 0, .5);
-	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -175,18 +195,18 @@ hr{
 
 .line{
     border-top: 1px solid #fff;
-    width: 170px;
-    align-items:left;
-    padding-bottom: 40px;
+    max-width: 170px;
+    margin: 0;
 }
 
 .banner__wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .banner__content{
-    margin-top: 231px;
+    margin-right: 30px;
+    margin-top: 23px;
 }
 
 .banner__title{
@@ -194,8 +214,8 @@ hr{
     font-size: 48px;
     line-height: 56px;
     color:#fff;
-    padding-top: 50px;
-    padding-bottom: 63px;
+    margin-top: 73px;
+    margin-bottom: 55px;
     width: 670px;
 }
 .banner__subtitle {
@@ -203,15 +223,10 @@ hr{
     font-size: 18px;
     line-height: 21px;
     color: #ffff;
-    padding-bottom: 63px;
+    margin-bottom: 42px;
     height: 42px;
     width: 270px;
 }
-
-/* .banner__title, .banner__subtitle {
-    text-align: left;
-} */
-
 
 .banner__btn{
     font-family: OpenSans600;
@@ -226,11 +241,12 @@ hr{
 }
 
 .banner__form{
+    display: flex;
+    flex-direction: column;
     background: #FFFFFF;
     border-radius: 10px;
     width: 470px;
     height: 450px;
-    margin-top: 208px;
 }
 
 .banner__form legend{
@@ -238,8 +254,7 @@ hr{
     font-size: 24px;
     line-height: 33px;
     text-align: center;
-    margin-bottom: 45px; 
-    padding: 45px;
+    margin: auto;
     
 }
 
@@ -255,6 +270,7 @@ legend span{
     font-family: OpenSans400;
     font-size: 14px;
     line-height: 19px;
+    color:#BDBDBD;
     width:80%;
     border:none;
     border-bottom: 1px solid #BDBDBD;
@@ -291,14 +307,14 @@ legend span{
 }
 
 .socialmedia__text h4{
-    font-family: OpenSans700;
+    font-family: 'OpenSans700';
     font-size: 24px;
     line-height: 33px;
     height: 60px;
 } 
 
 .socialmedia__text p{
-    font-family: Raleway400;
+    font-family: 'Raleway400';
     font-size: 18px;
     line-height: 21px;
 } 
@@ -314,8 +330,7 @@ legend span{
 }
 
 /* tabs */
-
- .tabs__header{ 
+.tabs__header{ 
     display: flex;
     margin-top: 117px;
     align-items: center;
@@ -325,23 +340,31 @@ legend span{
     width: 570px;
     color:#333333;}
 
-.tabs__item{
-    width: 190px;
-    height: 40px;
-    margin:auto;
+
+.tab, .tab-title { 
+    display: inline-block; /* Выстраиваем по горизонтали */ 
+} 
+   
+.tab input[type="radio"] { display: none; } 
+
+.tab-title { 
+    background: white; /* Цвет фона */ 
+    padding: 10px 40px; /* Поля вокруг текста */  
+} 
+   
+.tab :checked + .tab-title { 
+    position: relative; /* Относительное позиционирование */ 
+    background: #fff; /* Цвет фона */ 
+    top: 1px; /*Сдвигаем вниз  */
+    z-index: 1; /* Отображаем поверх содержимого */ 
+    border: 1px solid #C6CBCD; 
+    border-radius: 5px 5px 0px 0px; 
+    border-bottom: none; 
+} 
+
+.tab :checked { 
+    display: block; /* Показываем активную вкладку */ 
 }
-
-.tabs__item:active {
-   box-sizing: border-box;
-   border: 1px solid #C6CBCD;
-   border-radius: 5px 5px 0px 0px;
-}
-
-/* .tabs__item:checked {
-    box-sizing: border-box;
-    border: 1px solid #C6CBCD;
-    border-radius: 5px 5px 0px 0px; }*/
-
 
 .tabs__content{
     display: flex;
@@ -356,7 +379,7 @@ margin-left: 100px;
 }
 
 .tabs__title h3{
-    font-family: 'OpenSans700';
+    font-family: OpenSans700;
     font-size: 30px;
     line-height: 41px;
     width: 570px;
@@ -365,7 +388,7 @@ margin-left: 100px;
     align-items:center;
 }
 .tabs__text{
-    font-family: 'Raleway400';
+    font-family: Raleway400;
     font-size: 18px;
     line-height: 21px;
     width: 570px;
@@ -375,7 +398,7 @@ margin-left: 100px;
 }
 
 .tabs__btn{
-    font-family: 'OpenSans600';
+    font-family: OpenSans600;
     font-size: 18px;
     line-height: 25px;
     color:#fff;
@@ -415,8 +438,8 @@ margin-left: 100px;
 }
 
 .advantages__head{
-    color: #000;
     font-family: Raleway400;
+    color: #000;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -434,8 +457,8 @@ margin-left: 100px;
 }
 
 .advantages__head p{
-    color: #000;
     font-family: Raleway400;
+    color: #000;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
