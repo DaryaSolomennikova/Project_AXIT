@@ -547,6 +547,42 @@ margin-left: 100px;
     align-items: center;
 }
 
+/* feedback */
+
+.feedback__title {
+    padding-top: 50px;
+    padding-bottom: 63px;
+}
+
+.feedbacck__subtitle {
+    padding-top: 50px;
+    padding-bottom: 63px;
+}
+
+.feedback__title, .feedback__subtitle {
+    text-align: center;
+}
+
+.feedback__wrapper{
+    background:#fff;
+}
+
+.feedback__head{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.feedback__review{
+    font-family: Raleway400;
+    color: #000;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    width: 370px;
+    margin: 38px 30px;
+}
+
 /* minibanner */
 
 .minibanner{
