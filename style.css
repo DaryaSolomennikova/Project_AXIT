@@ -33,7 +33,7 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 
-/* h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} */
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* ---------------------- */
 @font-face {
     font-family: Raleway400;
@@ -44,15 +44,17 @@ img{vertical-align: top;}
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face{
     font-family: Raleway500;
     src: url("./fonts/Raleway-Medium.woff2") format("woff2"),
     url("./fonts/Raleway-Medium.woff") format("woff"),
     url("./fonts/Raleway-Medium.ttf") format("truetype"),
     url("./fonts/Raleway-Medium.eot") format("eot");
-    font-weight: 500;
+    font-weight:500;
     font-style: normal;
 }
+
 @font-face {
     font-family: Raleway700;
     src: url("./fonts/Raleway-Bold.woff2") format("woff2"),
@@ -62,6 +64,7 @@ img{vertical-align: top;}
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: OpenSans700;
     src: url("./fonts/OpenSans-Bold.woff2") format("woff2"),
@@ -125,7 +128,7 @@ ul{
 
 .nav__menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 570px;
 }
 
@@ -189,7 +192,6 @@ hr{
 }
 
 .logo__banner{
-    width: 170px;
     height: 55px;
 }
 
@@ -335,51 +337,48 @@ legend span{
 }
 
 /* tabs */
+
 .tabs__header{ 
     display: flex;
-    margin-top: 117px;
+    margin-top: 99px;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    align-content: center;
     height: 100%;
     width: 570px;
-    color:#333333;}
+    color:#333333;
+}
 
+.tabs__item{
+    width: 190px;
+    height: 40px;
+}
 
-.tab, .tab-title { 
-    display: inline-block; /* Выстраиваем по горизонтали */ 
+.tabs__header input[type="radio"] { 
+    display: none; 
 } 
    
-.tab input[type="radio"] { display: none; } 
-
-.tab-title { 
-    background: white; /* Цвет фона */ 
-    padding: 10px 40px; /* Поля вокруг текста */  
-} 
-   
-.tab :checked + .tab-title { 
-    position: relative; /* Относительное позиционирование */ 
-    background: #fff; /* Цвет фона */ 
-    top: 1px; /*Сдвигаем вниз  */
-    z-index: 1; /* Отображаем поверх содержимого */ 
+.tabs__header :checked + .tabs__item { 
+    position:relative;
+    top: 1px;
+    z-index: 1;
+    background: #fff;
     border: 1px solid #C6CBCD; 
     border-radius: 5px 5px 0px 0px; 
     border-bottom: none; 
 } 
 
-.tab :checked { 
+.tabs__header :checked { 
     display: block; /* Показываем активную вкладку */ 
 }
 
 .tabs__content{
     display: flex;
-    justify-content: flex-end;
     box-sizing: border-box;
     border: 1px solid #C6CBCD;
 }
 
 .tabs__title{
-width:1170px;
 margin-left: 100px;
 }
 
@@ -432,7 +431,7 @@ margin-left: 100px;
 }
 
 .advantages{
-    background-color:#F5F5F5;
+    background-color:#fff;
     padding: 50px 0;
 }
 
@@ -578,8 +577,4 @@ margin-left: 100px;
     text-align: center;
     margin-top: 28px;
 }
-/* .footer_wrapper{
-    max-width: 1170px;
-    margin: auto;
-} */
 
