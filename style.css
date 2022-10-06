@@ -569,11 +569,10 @@ margin-left: 100px;
 .contact__btn{
     height:58px;
     width:370px;
-    background:#EC7979;
     margin: 50px auto 42px;
 }
 
-.text_btn{
+.text__btn{
     font-family: OpenSans600;
     font-size: 18px;
     line-height: 25px;
