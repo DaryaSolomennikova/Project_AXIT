@@ -569,8 +569,10 @@ margin-left: 100px;
 
 .feedback__head{
     display: flex;
-    align-content: center;
-    align-items: center;
+}
+
+.feedback__customers{
+ margin: auto ;
 }
 
 .feedback__review{
@@ -578,10 +580,54 @@ margin-left: 100px;
     color: #000;
     font-size: 18px;
     line-height: 21px;
+    background:#E2E2E2;
+    border-radius: 10px;
     text-align: center;
     width: 370px;
-    margin: 38px 30px;
+    height: 180px;
+    margin-top: 83px;
+    margin-bottom:66px;
+    position: relative;
 }
+
+/* .feedback__review::after {
+    content:"";
+    width: 0;
+    height: 0;
+    border-width: 15px 10px 0 10px;
+    border: 2rem solid transparent;
+    border-color: #E2E2E2;
+    position: absolute;
+} */
+
+.user{
+    display: flex;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 66px;
+}
+
+.customer__photo{
+    height:70px;
+}
+
+.customer__name{
+    margin: auto;
+    width: 269px;
+}
+
+.customer__name h4{
+    font-family: OpenSans700 ;    
+    font-size: 24px;
+    line-height: 33px;
+    height: 54px;
+}
+ .customer__name p{
+    font-family: Raleway400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 15px;
+ } 
 
 /* minibanner */
 
@@ -710,6 +756,12 @@ background-color:rgba(0, 0, 0, 0)
     height:214px;
     width: 569px;
 }
+
+textarea{
+    width: 569px;
+    height: 212px;
+}
+
 
 
 /* footer */
